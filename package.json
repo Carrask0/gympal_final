@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-server": "node server/index.js",
+    "start-server": "node --env-file=.env server/index.js",
     "start": "npm run start-server"
   },
   "author": "",

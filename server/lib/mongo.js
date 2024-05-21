@@ -1,13 +1,17 @@
 const MongoClient = require('mongodb').MongoClient;
 const { ObjectId } = require('mongodb');
 
+
 //Load environment variables
-require('dotenv').config();
 const DB_PASSWORD = process.env.DB_PASSWORD;
 const DB_NAME = process.env.DB_NAME;
 
+console.log("DB_PASSWORD", DB_PASSWORD);
+console.log("DB_NAME", DB_NAME);
+
 
 const MONGO_URI = `mongodb+srv://jcarrasco:${DB_PASSWORD}@testcluster.fddx1ae.mongodb.net/?retryWrites=true&w=majority&appName=TestCluster`;
+console.log("MONGO_URI", MONGO_URI);
 
 class MongoLib {
     constructor() {
